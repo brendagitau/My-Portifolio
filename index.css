@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap");
+ *{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;}/*If you set box-sizing: border-box; on an 
+    element, padding and borderare included in the width and height:
+/* text-decoration: none; */
+/* 
+ .max-width{
+    max-width: 0;
+    padding: 1px, 80px;
+    margin:0; 
+    display: fixed;  
+    justify-content: space-between;} */ /*also css describes how we want our  work to be presented*/
+
+/*nav bar styling*/
+nav{width: 100%;
+  height: 75px;
+  background-color: #505d6132;
+  line-height: 75px;
+  padding : 0px 100px;
+  z-index: 2;
+  ;
+
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow:visible;
+  float :right;
+  margin-top: 40px;
+  margin-right: -90px;
+
+}
+.logo{
+    
+  float:left;
+  position: absolute;
+  display:block;
+  margin-left:1%;
+  margin: -0.02%;      
+  }
+nav a:link,
+nav a:visited {
+  display: block;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: 	#FFA500;
+  width: 120px;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+}
+nav a:hover
+ {
+  color: #FFD580;
+}
+nav ul li .current{  /*EDIT THIS FOR COLOUR */
+   color: #FFD580; 
+  
+}
+nav ul li {
+  
+  float: right;
+  margin-top:-29px;
+  padding-left: 20;
+  padding-right: 30px;
+  margin-right: 1px;
+  
+}
+body{
+  margin: 0;
+  padding:0;
+}
+.home {
+  background-image: url("/images/nice.jpg"); /*remove this image and put  a piece  of paper and splash image*/
+  background-repeat: no-repeat;
+  object-fit: contain;
+  margin-top:0px;
+  width: 100vw;
+  height: 100vh;
+  background-size:cover;
+}
+.intro {
+  max-width: 960px;
+  margin: 0 auto;
+  padding-top: 20%;
+}
+.intro h1 {
+  
+  text-align: left;
+  color: #E8B923;
+  letter-spacing: 0.1cm;
+  font-size: 4rem;
+  margin-left: -15.3%;
+  margin-top:50 ; 
+}
+.intro h2 {
+  text-align: left;
+  color: #F89205;
+  margin-left: -15%;
+  font-size: 3rem;
+}
+.intro h3 {
+  text-align: left;
+  color:#F89205;
+  margin-left: -15%;
+  font-size: 2rem;
+}
+.middle{
+  height: 200px;
+  width: 100px;
+  align-items: center;
+  background-color: springgreen;
+  justify-content: center;
+  display: flex;
+}
