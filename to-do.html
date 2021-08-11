@@ -1,0 +1,30 @@
+!DOCTYPE html>
+<html>
+ <head>
+ <title>To-Do List App</title>
+ <link rel="stylesheet" href="main.css">
+ <script>
+  function addItem() {
+   var newItem = document.createElement("div");
+   newItem.innerHTML = document.getElementById("box").value;
+   newItem.onclick = removeItem;
+   document.getElementById("list").appendChild(newItem);
+   saveList();
+  }
+  function removeItem() {
+   document.getElementById("list").removeChild(this);
+   saveList();
+  }
+ </script>
+</head>
+<body>
+ <div class="button">
+  <!-- <p style="font-size:18px; font-style:bold;"> To-Do List</p> -->
+  <input type="text" id="box" value=""/>
+  <br/>
+  <input type="button" value="Add item" onclick="addItem();"/>
+  <br/>
+   <div id="list"></div>
+ </div>
+</body>
+</html>
